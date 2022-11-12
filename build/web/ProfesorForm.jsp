@@ -35,7 +35,7 @@
                                         <div class="container-fluid">
                                                   <a class="navbar-brand" href="#">
                                                             <img src="https://images.vexels.com/media/users/3/206006/isolated/preview/3538885ee4f6d3de4aeb1a3aa6c644bf-dibujos-animados-lindo-libro-de-texto.png" width="60" height="60" alt="">
-                                                            Profesor
+                                                            Categoria
                                                   </a>
                                                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                                             <span class="navbar-toggler-icon"></span>
@@ -51,17 +51,17 @@
                                                                                           Registrar
                                                                                 </a>
                                                                                 <ul class="dropdown-menu dropdown-menu-dark" id="menu-navbar">
-                                                                                          <li><a class="dropdown-item" href="LibrosForm.jsp">Registrar Libros </a></li>
+                                                                                          <li><a class="dropdown-item" href="LibrosForm.jsp">Registrar Articulos </a></li>
                                                                                     
                                                                                           <li><hr class="dropdown-divider"></li>
                                                                                 </ul>
                                                                       </li>
                                                                       <li class="nav-item dropdown">
                                                                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                                          Reportes De Libro
+                                                                                          Reportes De Articulo
                                                                                 </a>
                                                                                 <ul class="dropdown-menu dropdown-menu-dark" id="menu-navbar2">                                                              
-                                                                                          <li><a class="dropdown-item" href="LibroReport.jsp">Reporte de libros</a></li>
+                                                                                          <li><a class="dropdown-item" href="LibroReport.jsp">Reporte de Articulos</a></li>
                                                                                        
                                                                                 </ul>
                                                                       </li>
@@ -83,16 +83,16 @@
                 <form method="POST" id="form" name="form" action="profesorController">
                     <div class="mt-3 mb-5 mx-4">
                         <img src="https://images.vexels.com/media/users/3/206006/isolated/preview/3538885ee4f6d3de4aeb1a3aa6c644bf-dibujos-animados-lindo-libro-de-texto.png" class="rounded mx-auto d-block"   height="200" alt="...." >
-                        <h2 class="display-4 text-center my-4">  REGISTRO Del Profesor </h2>
+                        <h2 class="display-4 text-center my-4">  Registro Del Articulo </h2>
                            <div class="row my-3">
                             <div class="col">
-                                <label for="codigo">Dpi Profesor</label>
+                                <label for="codigo">Id Categoria</label>
                                 <input type="text" class="form-control" placeholder="" name="dpi" id="dpi">
                                 <input type="hidden" name="control" value="GUARDAR">
                                  </div>
                              <div class="row my-3">
                             <div class="col">
-                                <label for="Nombres">nombre</label>
+                                <label for="Nombres">Descripcion</label>
                                 <input type="text" class="form-control" placeholder="" name="name" id="name">
                             </div>
                                   <div class="col">

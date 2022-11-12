@@ -1,14 +1,14 @@
 <%-- 
-    Document   : LibrosForm
-    Created on : 11/11/2022, 22:12:16
-    Author     : PC GAMING
+    Document   : home
+    Created on : 9/11/2022, 18:34:29
+    Author     : ramir
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-     <title>Registrar Articulos</title>
+            <title>Registrar Ingreso</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -20,11 +20,16 @@
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
                     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
                     <script src="js/script.js"></script>
-                    <script src="js/ScriptLibro.js" type="text/javascript"></script>
                     <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
+    <% 
+        response.setHeader("Cache-Control", "nocache, no-store, must-revalidate");
+        if(session.getAttribute("user")==null){
+            response.sendRedirect("index.jsp");
+        }
+    %>
     <body><header class="header">
-                                <nav class="navbar navbar-expand-lg navbar-light">
+                              <nav class="navbar navbar-expand-lg navbar-light">
                                         <div class="container-fluid">
                                                   <a class="navbar-brand" href="#">
                                                             <img src="https://images.vexels.com/media/users/3/206006/isolated/preview/3538885ee4f6d3de4aeb1a3aa6c644bf-dibujos-animados-lindo-libro-de-texto.png" width="60" height="60" alt="">
@@ -44,17 +49,17 @@
                                                                                           Registrar
                                                                                 </a>
                                                                                 <ul class="dropdown-menu dropdown-menu-dark" id="menu-navbar">
-                                                                              
+                                                                                          <li><a class="dropdown-item" href="LibrosForm.jsp">Registrar Articulos </a></li>
                                                                                           <li><a class="dropdown-item" href="ProfesorForm.jsp">Registrar Categoria</a></
                                                                                           <li><hr class="dropdown-divider"></li>
                                                                                 </ul>
                                                                       </li>
                                                                       <li class="nav-item dropdown">
                                                                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                                          Reportes De Articulo
+                                                                                          Reportes De Articulos
                                                                                 </a>
                                                                                 <ul class="dropdown-menu dropdown-menu-dark" id="menu-navbar2">                                                              
-                                                                                          <li><a class="dropdown-item" href="LibroReport.jsp">Reporte de Ariculo</a></li>
+                                                                                          <li><a class="dropdown-item" href="LibroReport.jsp">Reporte de Articulos</a></li>
                                                                                        
                                                                                 </ul>
                                                                       </li>
@@ -66,48 +71,5 @@
                                         </div>
                               </nav>
                     </header>
-        
-         <body>
-        
-        <div class="d-flex justify-content-around mx-4 my-5">
-            <div class="shadow-lg p-3 bg-white rounded">
-                <form method="POST" id="form" name="form" action="LibroController">
-                    <div class="mt-3 mb-5 mx-4">
-                        <img src="https://images.vexels.com/media/users/3/206006/isolated/preview/3538885ee4f6d3de4aeb1a3aa6c644bf-dibujos-animados-lindo-libro-de-texto.png" class="rounded mx-auto d-block"   height="200" alt="...." >
-                        <h2 class="display-4 text-center my-4">  REGISTRO DEL ARTICULO </h2>
-                           <div class="row my-3">
-                            <div class="col">
-                                <label for="codigo">codigo del articulo </label>
-                                <input type="text" class="form-control" placeholder="" name="code" id="code">
-                                <input type="hidden" name="control" value="GUARDAR">
-                                 </div>
-                            <div class="col">
-                                <label for="Nombres">Nombre del articulo</label>
-                                <input type="text" class="form-control" placeholder="" name="edi" id="edi">
-                            </div>
-                          
-                          </div>
-                                <div class="row my-3">
-                             <div class="col">
-                    <label for="email">Alias</label>
-                    <input type="email" class="form-control" id="mate" placeholder="" name="mate">
-                </div>
-                            <div class="col">
-                                <label for="telefono">Fecha del registro </label>
-                                <input type="text" class="form-control" placeholder="" name="name" id="name">
-                            </div>
-                        </div>
-                        <div class="contenido">
-          <input type="button" onclick="sendForm()" class="btn btn-outline-success" value="Register">
-                        <button type="reset" class="btn btn-outline-danger">Vaciar</button>
-                        </div>
-                    </div>
-                </form>
-     
-            </div>
-        </div>
-        
-        
-        
-  
+    </body>
 </html>

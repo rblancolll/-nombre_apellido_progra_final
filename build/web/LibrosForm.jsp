@@ -28,7 +28,7 @@
                                         <div class="container-fluid">
                                                   <a class="navbar-brand" href="#">
                                                             <img src="https://images.vexels.com/media/users/3/206006/isolated/preview/3538885ee4f6d3de4aeb1a3aa6c644bf-dibujos-animados-lindo-libro-de-texto.png" width="60" height="60" alt="">
-                                                            Libros
+                                                            Articulos
                                                   </a>
                                                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                                             <span class="navbar-toggler-icon"></span>
@@ -45,16 +45,16 @@
                                                                                 </a>
                                                                                 <ul class="dropdown-menu dropdown-menu-dark" id="menu-navbar">
                                                                               
-                                                                                          <li><a class="dropdown-item" href="ProfesorForm.jsp">Registrar profesor</a></
+                                                                                          <li><a class="dropdown-item" href="ProfesorForm.jsp">Registrar Categoria</a></
                                                                                           <li><hr class="dropdown-divider"></li>
                                                                                 </ul>
                                                                       </li>
                                                                       <li class="nav-item dropdown">
                                                                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                                          Reportes De Libro
+                                                                                          Reportes De Articulo
                                                                                 </a>
                                                                                 <ul class="dropdown-menu dropdown-menu-dark" id="menu-navbar2">                                                              
-                                                                                          <li><a class="dropdown-item" href="LibroReport.jsp">Reporte de libros</a></li>
+                                                                                          <li><a class="dropdown-item" href="LibroReport.jsp">Reporte de Ariculo</a></li>
                                                                                        
                                                                                 </ul>
                                                                       </li>
