@@ -86,7 +86,7 @@
                         <h2 class="display-4 text-center my-4">  Registro Del Articulo </h2>
                            <div class="row my-3">
                             <div class="col">
-                                <label for="codigo">Id Categoria</label>
+                                <label for="codigo"></label>
                                 <input type="text" class="form-control" placeholder="" name="dpi" id="dpi">
                                 <input type="hidden" name="control" value="GUARDAR">
                                  </div>
@@ -96,7 +96,7 @@
                                 <input type="text" class="form-control" placeholder="" name="name" id="name">
                             </div>
                                   <div class="col">
-                                <label for="Nombres">codigo libro</label>
+                                <label for="Nombres">Codigo</label>
                                 <input type="text" class="form-control" placeholder="" name="code" id="code">
                             </div>
                           
